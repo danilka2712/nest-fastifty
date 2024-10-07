@@ -8,7 +8,9 @@ export class GuestGuard implements CanActivate {
     public canActivate(context: ExecutionContext): boolean | Promise<boolean> | Observable<boolean> {
 
         const header = context.switchToHttp().getRequest<FastifyRequest>().headers.authorization;
+
         return header === undefined || !header;
+
     }
 
 }

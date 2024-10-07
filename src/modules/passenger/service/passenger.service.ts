@@ -5,10 +5,7 @@ import { PassengerData, PassengerInput } from '../model';
 
 @Injectable()
 export class PassengerService {
-
-    public constructor(
-        private readonly prismaService: PrismaService
-    ) { }
+    public constructor(private readonly prismaService: PrismaService) {}
 
     /**
      * Find all passengers in the database
@@ -16,10 +13,9 @@ export class PassengerService {
      * @returns A passenger list
      */
     public async find(): Promise<PassengerData[]> {
-
         const passengers = await this.prismaService.passenger.findMany({});
 
-        return passengers.map(passenger => new PassengerData(passenger));
+        return passengers.map((passenger) => new PassengerData(passenger));
     }
 
     /**
@@ -29,9 +25,8 @@ export class PassengerService {
      * @returns A passenger created in the database
      */
     public async create(data: PassengerInput): Promise<PassengerData> {
-
         const passenger = await this.prismaService.passenger.create({
-            data
+            data,
         });
 
         return new PassengerData(passenger);

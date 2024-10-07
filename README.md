@@ -1,8 +1,6 @@
 
 # NestJS 10 API project template
 
-[![License](https://img.shields.io/github/license/saluki/nestjs-template.svg)](https://github.com/saluki/nestjs-template/blob/master/LICENSE)
-
 Scaffold quickly your next [NestJS 10](https://nestjs.com/) API project with 
 ❤️ using this template
 
@@ -25,7 +23,6 @@ Before starting, make sure you have at least those components on your workstatio
 
 ### 1.2 Project configuration
 
-Start by cloning this project on your workstation or click on ["Use this template"](https://github.com/new?template_name=nestjs-template&template_owner=Saluki) in Github.
 
 ``` sh
 git clone https://github.com/saluki/nestjs-template my-project

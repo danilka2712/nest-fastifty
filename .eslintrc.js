@@ -111,6 +111,7 @@ module.exports = {
             "error",
             "single"
         ],
+
         "@typescript-eslint/restrict-plus-operands": "error",
         "@typescript-eslint/semi": [
             "error",
